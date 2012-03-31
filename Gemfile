@@ -36,3 +36,5 @@ gem 'jquery-rails'
 gem 'mysql'
 
 gem 'carrierwave'
+
+gem 'pg'
