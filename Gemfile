@@ -1,40 +1,33 @@
-source 'https://rubygems.org'
-
-gem 'rails', '3.2.0.rc1'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
-
-# Gems used only for assets and not required
-# in production environments by default.
+source 'http://rubygems.org'
+gem 'rails', '3.1.0'
 group :assets do
-  gem 'sass-rails',   '~> 3.2.0'
-  gem 'coffee-rails', '~> 3.2.0'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass', '~> 1.4.2'
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
 end
-
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+gem "rspec-rails", ">= 2.6.1", :group => [:development, :test]
+gem "database_cleaner", ">= 0.6.7", :group => :tes
 
 gem 'mysql'
 
 gem 'carrierwave'
 
 gem 'pg'
+
+gem 'devise'
+
+gem "omniauth-facebook"
+
+gem 'formtastic'
+
+gem 'formtastic-bootstrap'
+
+gem 'twitter-bootstrap-rails'
+
+gem 'country-select'
+
+gem 'yelpster'
+
+
