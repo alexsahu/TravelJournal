@@ -3,9 +3,11 @@ class Place < ActiveRecord::Base
   require 'oauth'
   require 'yelpster'
   
+  has_many :reviews , :dependent => :destroy
   
   before_save :load_yelp_attributes
   
+  accepts_nested_attributes_for :reviews , :allow_destroy => true
   
   #loading yelp related attributes before we save 
   def load_yelp_attributes 

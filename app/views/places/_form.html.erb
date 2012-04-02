@@ -3,6 +3,9 @@
  	<%= f.input :name %>
 	<%= f.input :city %>
 	<%= f.input :nation %>
+	<%= f.semantic_fields_for :reviews do |rf| %>
+		<%= rf.input :description , :as => :text , :input_html => {:rows => 10, :cols => 10} %>
+	<% end %>
  <% end %>
  <%= f.buttons do %>
    <%= f.commit_button %>
